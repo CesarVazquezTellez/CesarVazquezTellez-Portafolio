@@ -66,20 +66,7 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-/* Opcional: Para el efecto de imán entre secciones */
-main {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-section {
-  scroll-snap-align: start;
-}
 
 @layer base {
   * {

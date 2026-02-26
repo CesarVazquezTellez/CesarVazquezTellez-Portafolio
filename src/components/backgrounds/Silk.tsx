@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import React, { forwardRef, useMemo, useRef, useLayoutEffect } from 'react';
+import React, { forwardRef, useMemo, useRef, useLayoutEffect, useState, useEffect } from 'react';
 import { Canvas, useFrame, useThree, type RootState } from '@react-three/fiber';
 import { Color, Mesh, ShaderMaterial } from 'three';
 import { type IUniform } from 'three';
@@ -141,8 +141,26 @@ const Silk: React.FC<SilkProps> = ({ speed = 5, scale = 1, color = '#7B7481', no
     [speed, scale, noiseIntensity, color, rotation]
   );
 
+  const [dpr, setDpr] = useState<[number, number]>([1, 1.5]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Optimize for mobile: greatly reduce device pixel ratio to improve frame rate and prevent lag
+      if (window.innerWidth < 768) {
+        setDpr([0.4, 0.8]);
+      } else {
+        // Desktop can be higher, but 1.5 is usually plenty
+        setDpr([0.8, 1.2]);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <Canvas dpr={[1, 2]} frameloop="always">
+    <Canvas dpr={dpr} frameloop="always">
       <SilkPlane ref={meshRef} uniforms={uniforms} />
     </Canvas>
   );
