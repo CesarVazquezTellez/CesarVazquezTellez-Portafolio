@@ -43,7 +43,7 @@ const Background = () => {
       <Silk
         speed={4}
         scale={0.6}
-        color="#475052ff"
+        color="#364143ff"
         noiseIntensity={2.0}
         rotation={0}
       />
