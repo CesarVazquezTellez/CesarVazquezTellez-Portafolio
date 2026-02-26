@@ -5,47 +5,47 @@ const techGroups = [
   {
     title: "Backend",
     items: [
-      { name: "Java", icon: "/src/assets/icons/java.png" },
-      { name: "Python", icon: "src/assets/icons/python.png" },
-      { name: "JavaScript", icon: "src/assets/icons/js.png" },
-      { name: "TypeScript", icon: "src/assets/icons/mecanografiado.png" },
-      { name: "Node.js", icon: "src/assets/icons/nodejs.png" },
-      { name: "Nest.js", icon: "src/assets/icons/nestjs.svg" },
+      { name: "Java", icon: "/assets/icons/java.png" },
+      { name: "Python", icon: "/assets/icons/python.png" },
+      { name: "JavaScript", icon: "/assets/icons/js.png" },
+      { name: "TypeScript", icon: "/assets/icons/mecanografiado.png" },
+      { name: "Node.js", icon: "/assets/icons/nodejs.png" },
+      { name: "Nest.js", icon: "/assets/icons/nestjs.svg" },
     ]
   },
   {
     title: "Frontend",
     items: [
-      { name: "HTML", icon: "/src/assets/icons/html-5.png" },
-      { name: "CSS", icon: "/src/assets/icons/css-3.png" },
-      { name: "React.js", icon: "/src/assets/react.svg" },
-      { name: "Figma", icon: "/src/assets/icons/figma.png" },
-      { name: "Adobe XD", icon: "/src/assets/icons/adobeXD.png" },
-      { name: "Inkscape", icon: "/src/assets/icons/inkscape.webp" },
-      { name: "Tailwind", icon: "/src/assets/icons/tailwind.png" },
+      { name: "HTML", icon: "/assets/icons/html-5.png" },
+      { name: "CSS", icon: "/assets/icons/css-3.png" },
+      { name: "React.js", icon: "/assets/react.svg" },
+      { name: "Figma", icon: "/assets/icons/figma.png" },
+      { name: "Adobe XD", icon: "/assets/icons/adobeXD.png" },
+      { name: "Inkscape", icon: "/assets/icons/inkscape.webp" },
+      { name: "Tailwind", icon: "/assets/icons/tailwind.png" },
 
     ]
   },
   {
     title: "Base de datos",
     items: [
-      { name: "PostgreSQL", icon: "/src/assets/icons/postgre.png" },
-      { name: "MySQL", icon: "/src/assets/icons/mysql.png" },
-      { name: "SupaBase", icon: "/src/assets/icons/supabase.png" },
-      { name: "Maven", icon: "/src/assets/icons/maven.jpg" },
+      { name: "PostgreSQL", icon: "/assets/icons/postgre.png" },
+      { name: "MySQL", icon: "/assets/icons/mysql.png" },
+      { name: "SupaBase", icon: "/assets/icons/supabase.png" },
+      { name: "Maven", icon: "/assets/icons/maven.jpg" },
     ]
   },
   {
     title: "Herramientas",
     items: [
-      { name: "VS Code", icon: "/src/assets/icons/vs.png" },
-      { name: "PyCharm", icon: "/src/assets/icons/pycharm.png" },
-      { name: "IntelliJ", icon: "/src/assets/icons/intelij.png" },
-      { name: "Git", icon: "/src/assets/icons/git.png" },
-      { name: "GitHub", icon: "/src/assets/icons/github1.png" },
+      { name: "VS Code", icon: "/assets/icons/vs.png" },
+      { name: "PyCharm", icon: "/assets/icons/pycharm.png" },
+      { name: "IntelliJ", icon: "/assets/icons/intelij.png" },
+      { name: "Git", icon: "/assets/icons/git.png" },
+      { name: "GitHub", icon: "/assets/icons/github1.png" },
       { name: "Vite", icon: "/vite.svg" },
-      { name: "Npm", icon: "/src/assets/icons/npm.png" },
-      { name: "Postman", icon: "/src/assets/icons/postman1.png" },
+      { name: "Npm", icon: "/assets/icons/npm.png" },
+      { name: "Postman", icon: "/assets/icons/postman1.png" },
     ]
   }
 ];
