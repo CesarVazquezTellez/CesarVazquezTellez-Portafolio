@@ -4,9 +4,25 @@
 
 // import Aurora from "./backgrounds/Aurora";
 
+import { useState, useEffect } from "react";
 import Silk from "./backgrounds/Silk";
 
 const Background = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    checkMobile();
+
+    // Add event listener for resize
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     //  <div className="fixed inset-0 z-0 overflow-hidden">
     //    <LiquidChrome
@@ -39,14 +55,26 @@ const Background = () => {
     //   />
     // </div>
 
-    <div className="fixed inset-0 z-0 overflow-hidden">
-      <Silk
-        speed={4}
-        scale={0.6}
-        color="#364143ff"
-        noiseIntensity={2.0}
-        rotation={0}
-      />
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#24292b]">
+      {isMobile ? (
+        // Static styling for mobile devices:
+        // A gentle radial-gradient that resembles the colors of Silk but costs 0 performance
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "radial-gradient(circle at 50% 50%, #364143 0%, #1e2425 100%)"
+          }}
+        />
+      ) : (
+        // WebGL animated background for desktop devices
+        <Silk
+          speed={4}
+          scale={0.6}
+          color="#364143ff"
+          noiseIntensity={2.0}
+          rotation={0}
+        />
+      )}
     </div>
   );
 };
