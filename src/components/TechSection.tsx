@@ -5,47 +5,47 @@ const techGroups = [
   {
     title: "Backend",
     items: [
-      { name: "Java", icon: "/assets/icons/java.png" },
-      { name: "Python", icon: "/assets/icons/python.png" },
-      { name: "JavaScript", icon: "/assets/icons/js.png" },
-      { name: "TypeScript", icon: "/assets/icons/mecanografiado.png" },
-      { name: "Node.js", icon: "/assets/icons/nodejs.png" },
-      { name: "Nest.js", icon: "/assets/icons/nestjs.svg" },
+      { name: "Java", icon: "/java.png" },
+      { name: "Python", icon: "/python.png" },
+      { name: "JavaScript", icon: "/js.png" },
+      { name: "TypeScript", icon: "/mecanografiado.png" },
+      { name: "Node.js", icon: "/nodejs.png" },
+      { name: "Nest.js", icon: "/nestjs.svg" },
     ]
   },
   {
     title: "Frontend",
     items: [
-      { name: "HTML", icon: "/assets/icons/html-5.png" },
-      { name: "CSS", icon: "/assets/icons/css-3.png" },
-      { name: "React.js", icon: "/assets/react.svg" },
-      { name: "Figma", icon: "/assets/icons/figma.png" },
-      { name: "Adobe XD", icon: "/assets/icons/adobeXD.png" },
-      { name: "Inkscape", icon: "/assets/icons/inkscape.webp" },
-      { name: "Tailwind", icon: "/assets/icons/tailwind.png" },
+      { name: "HTML", icon: "/html-5.png" },
+      { name: "CSS", icon: "/css-3.png" },
+      { name: "React.js", icon: "/react.svg" },
+      { name: "Figma", icon: "/figma.png" },
+      { name: "Adobe XD", icon: "/adobeXD.png" },
+      { name: "Inkscape", icon: "/inkscape.webp" },
+      { name: "Tailwind", icon: "/tailwind.png" },
 
     ]
   },
   {
     title: "Base de datos",
     items: [
-      { name: "PostgreSQL", icon: "/assets/icons/postgre.png" },
-      { name: "MySQL", icon: "/assets/icons/mysql.png" },
-      { name: "SupaBase", icon: "/assets/icons/supabase.png" },
-      { name: "Maven", icon: "/assets/icons/maven.jpg" },
+      { name: "PostgreSQL", icon: "/postgre.png" },
+      { name: "MySQL", icon: "/mysql.png" },
+      { name: "SupaBase", icon: "/supabase.png" },
+      { name: "Maven", icon: "/maven.jpg" },
     ]
   },
   {
     title: "Herramientas",
     items: [
-      { name: "VS Code", icon: "/assets/icons/vs.png" },
-      { name: "PyCharm", icon: "/assets/icons/pycharm.png" },
-      { name: "IntelliJ", icon: "/assets/icons/intelij.png" },
-      { name: "Git", icon: "/assets/icons/git.png" },
-      { name: "GitHub", icon: "/assets/icons/github1.png" },
+      { name: "VS Code", icon: "/vs.png" },
+      { name: "PyCharm", icon: "/pycharm.png" },
+      { name: "IntelliJ", icon: "/intelij.png" },
+      { name: "Git", icon: "/git.png" },
+      { name: "GitHub", icon: "/github1.png" },
       { name: "Vite", icon: "/vite.svg" },
-      { name: "Npm", icon: "/assets/icons/npm.png" },
-      { name: "Postman", icon: "/assets/icons/postman1.png" },
+      { name: "Npm", icon: "/npm.png" },
+      { name: "Postman", icon: "/postman1.png" },
     ]
   }
 ];
