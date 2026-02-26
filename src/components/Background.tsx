@@ -58,13 +58,29 @@ const Background = () => {
     <div className="fixed inset-0 z-0 overflow-hidden bg-[#24292b]">
       {isMobile ? (
         // Static styling for mobile devices:
-        // A gentle radial-gradient that resembles the colors of Silk but costs 0 performance
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "radial-gradient(circle at 50% 50%, #364143 0%, #1e2425 100%)"
-          }}
-        />
+        // A lightweight CSS animation with floating blurred gradients (0 performance impact)
+        <div className="absolute inset-0 overflow-hidden bg-[#1e2425]">
+          {/* Base gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1e2425] to-[#2a3435]" />
+
+          {/* Animated Blob 1 */}
+          <div
+            className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] rounded-full mix-blend-screen opacity-30 filter blur-[60px] animate-float-slow"
+            style={{ backgroundColor: '#4a6b6d' }}
+          />
+
+          {/* Animated Blob 2 */}
+          <div
+            className="absolute top-[40%] right-[-20%] w-[70vw] h-[70vw] rounded-full mix-blend-screen opacity-20 filter blur-[80px] animate-float-slower"
+            style={{ backgroundColor: '#365355' }}
+          />
+
+          {/* Animated Blob 3 */}
+          <div
+            className="absolute bottom-[-20%] left-[20%] w-[80vw] h-[80vw] rounded-full mix-blend-screen opacity-25 filter blur-[70px] animate-float-slowest"
+            style={{ backgroundColor: '#2d4547' }}
+          />
+        </div>
       ) : (
         // WebGL animated background for desktop devices
         <Silk

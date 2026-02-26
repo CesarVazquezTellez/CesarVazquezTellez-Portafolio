@@ -257,3 +257,24 @@
     pointer-events: none;
   }
 }
+
+@layer utilities {
+  @keyframes float {
+    0% { transform: translateY(0) scale(1); }
+    33% { transform: translateY(-30px) scale(1.1); }
+    66% { transform: translateY(20px) scale(0.9); }
+    100% { transform: translateY(0) scale(1); }
+  }
+
+  .animate-float-slow {
+    animation: float 15s ease-in-out infinite;
+  }
+  
+  .animate-float-slower {
+    animation: float 20s ease-in-out infinite reverse;
+  }
+  
+  .animate-float-slowest {
+    animation: float 25s ease-in-out infinite;
+  }
+}
