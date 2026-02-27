@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import profilePhoto from '../assets/profile-photo.png';
+import profilePhoto from '/profilephoto2.jpeg';
 
 const ProfilePhoto = () => {
   return (
@@ -11,7 +11,7 @@ const ProfilePhoto = () => {
     >
       {/* Outer glow effect */}
       <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gradient-blue/20 to-gradient-green/20 blur-2xl scale-110" />
-      
+
       {/* Glass ring container */}
       <div className="glass-ring p-3 relative animate-float">
         {/* Inner photo container */}
@@ -21,7 +21,7 @@ const ProfilePhoto = () => {
             alt="César Vázquez Téllez"
             className="w-full h-full object-cover object-top"
           />
-          
+
           {/* Subtle overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
         </div>
