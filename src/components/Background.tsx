@@ -1,9 +1,3 @@
-// import LiquidChrome from "../components/backgrounds/LiquidChrome";
-
-// import Beams from "./backgrounds/Bims";
-
-// import Aurora from "./backgrounds/Aurora";
-
 import { useState, useEffect } from "react";
 import Silk from "./backgrounds/Silk";
 
