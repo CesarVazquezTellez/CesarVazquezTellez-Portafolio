@@ -240,7 +240,7 @@ const ContactSection = () => {
                                     whileTap={{ scale: 0.97 }}
                                     className={`group relative flex items-center gap-3 px-7 py-3.5 rounded-full text-sm font-bold tracking-wide overflow-hidden transition-all duration-500 ${sent
                                         ? 'bg-emerald-500 text-white border border-emerald-400'
-                                        : 'bg-white text-black hover:bg-white/90'
+                                        : 'glass-button px-6 py-3 flex items-center gap-2 rounded-full text-black font-medium'
                                         }`}
                                 >
                                     <motion.span

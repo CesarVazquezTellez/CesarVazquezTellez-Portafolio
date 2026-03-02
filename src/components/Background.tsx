@@ -1,90 +1,82 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Silk from "./backgrounds/Silk";
 
 const Background = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Initial check
+    setMounted(true);
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
-
-    // Add event listener for resize
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  // Estrellas memoizadas para rendimiento
+  const stars = useMemo(() => {
+    return Array.from({ length: 60 }).map((_, i) => ({
+      id: i,
+      top: `${Math.random() * 100}%`,
+      left: `${Math.random() * 100}%`,
+      size: Math.random() * 2 + 1 + "px",
+      duration: Math.random() * 3 + 2 + "s",
+      delay: Math.random() * 5 + "s",
+    }));
+  }, []);
+
+  if (!mounted) return <div className="fixed inset-0 bg-[#050505]" />;
+
   return (
-    //  <div className="fixed inset-0 z-0 overflow-hidden">
-    //    <LiquidChrome
-    //      baseColor={[0.05, 0.08, 0.09]}
-    //      speed={0.24}
-    //      amplitude={0.3}
-    //      interactive={true}
-    //      style={{ width: "100%", height: "100%" }}
-    //    />
-    // </div>
-    //    <div className="fixed inset-0 z-0 overflow-hidden">
-    //  <Beams
-    //    beamWidth={3}
-    //    beamHeight={30}
-    //    beamNumber={20}
-    //    lightColor="#b3ffd4"
-    //    speed={2}
-    //    noiseIntensity={3.25}
-    //    scale={0.2}
-    //    rotation={30}
-    //  />
-    //   </div>
-
-    // <div className="fixed inset-0 z-0 overflow-hidden">
-    //   <Aurora
-    //     colorStops={["#66ffb0", "#a3f0c4", "#29e6ff"]}
-    //     blend={2.0}
-    //     amplitude={3.0}
-    //     speed={1}
-    //   />
-    // </div>
-
-    <div className="fixed inset-0 z-0 overflow-hidden bg-[#24292b]">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#050505]">
       {isMobile ? (
-        // Static styling for mobile devices:
-        // A lightweight CSS animation with floating blurred gradients (0 performance impact)
-        <div className="absolute inset-0 overflow-hidden bg-[#1e2425]">
-          {/* Base gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1e2425] to-[#2a3435]" />
+        /* --- MÓVIL: ESPACIO PROFUNDO --- */
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Gradiente radial para dar profundidad */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#0d1417_0%,#050505_100%)]" />
 
-          {/* Animated Blob 1 */}
-          <div
-            className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] rounded-full mix-blend-screen opacity-30 filter blur-[60px] animate-float-slow"
-            style={{ backgroundColor: '#4a6b6d' }}
-          />
+          {/* Estrellas */}
+          {stars.map((star) => (
+            <div
+              key={star.id}
+              className="absolute rounded-full bg-white opacity-0 animate-twinkle"
+              style={{
+                top: star.top,
+                left: star.left,
+                width: star.size,
+                height: star.size,
+                animationDuration: star.duration,
+                animationDelay: star.delay,
+              }}
+            />
+          ))}
 
-          {/* Animated Blob 2 */}
-          <div
-            className="absolute top-[40%] right-[-20%] w-[70vw] h-[70vw] rounded-full mix-blend-screen opacity-20 filter blur-[80px] animate-float-slower"
-            style={{ backgroundColor: '#365355' }}
-          />
-
-          {/* Animated Blob 3 */}
-          <div
-            className="absolute bottom-[-20%] left-[20%] w-[80vw] h-[80vw] rounded-full mix-blend-screen opacity-25 filter blur-[70px] animate-float-slowest"
-            style={{ backgroundColor: '#2d4547' }}
-          />
+          {/* Nebulosa muy tenue */}
+          <div className="absolute top-1/4 left-1/4 w-full h-full bg-[#1a363d] opacity-10 filter blur-[120px] rounded-full animate-pulse" />
         </div>
       ) : (
-        // WebGL animated background for desktop devices
-        <Silk
-          speed={4}
-          scale={0.6}
-          color="#364143ff"
-          noiseIntensity={2.0}
-          rotation={0}
-        />
+        /* --- ESCRITORIO: SILK ANIMADO --- */
+        /* Ajustamos el color para que sea visible pero elegante sobre negro */
+        <div className="absolute inset-0 opacity-80">
+          <Silk
+            speed={4} // Bajé la velocidad para que sea más fluido/elegante
+            scale={0.6}
+            color="#1e2425" // Un gris azulado que se nota sobre el fondo #050505
+            noiseIntensity={2.0}
+            rotation={0}
+          />
+        </div>
       )}
+
+      <style>{`
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.1; transform: scale(0.9); }
+          50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        .animate-twinkle {
+          animation: twinkle linear infinite;
+        }
+      `}</style>
     </div>
   );
 };
