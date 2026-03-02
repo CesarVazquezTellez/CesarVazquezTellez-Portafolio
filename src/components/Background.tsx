@@ -61,7 +61,7 @@ const Background = () => {
           <Silk
             speed={4} // Bajé la velocidad para que sea más fluido/elegante
             scale={0.6}
-            color="#1e2425" // Un gris azulado que se nota sobre el fondo #050505
+            color="#222a2cff" // Un gris azulado que se nota sobre el fondo
             noiseIntensity={2.0}
             rotation={0}
           />
