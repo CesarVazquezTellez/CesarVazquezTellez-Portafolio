@@ -35,7 +35,7 @@ const HeroCard = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="text-lg md:text-2xl font-display font-semibold text-gradient mb-4"
       >
-        Desarrollador Web En Formación
+        Desarrollador de Software Backend
       </motion.h2>
 
       {/* Divider */}
@@ -58,12 +58,7 @@ const HeroCard = () => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="text-sm md:text-base text-white/70 text-secondary-foreground leading-relaxed mb-8"
       >
-        Hola, soy César. Apasionado por el desarrollo de software, autodidacta y
-        estudiante universitario con especial interés en el backend web y en la
-        construcción de arquitecturas REST limpias y eficientes. Disfruto convertir
-        desafíos en soluciones precisas y en oportunidades de aprendizaje, aplicando
-        análisis crítico y creatividad para aportar valor a proyectos reales y seguir
-        creciendo profesionalmente.
+        Hola, soy César, Estudiante de Software orientado al Desarrollo Backend Web y la gestión de datos. Me entusiasma transformar requerimientos complejos en soluciones funcionales, especialmente para el sector público. He dedicado mi etapa universitaria a aprender tecnologías solidas y modernas, aplicándolas en proyectos que buscan mejorar procesos administrativos. Soy una persona autodidacta, comprometida con la calidad y con gran disposición para integrarme a equipos de trabajo profesionales.
       </motion.p>
 
       {/* Divider */}
@@ -103,8 +98,8 @@ const HeroCard = () => {
 
         {/* CTA Button */}
         <a
-          href="/CV_Cesar_Vazquez_Tellez_.pdf" // Nombre exacto de tu archivo en la carpeta public
-          download="CV_Cesar_Vazquez_Tellez.pdf" // Nombre con el que se guardará en la PC del usuario
+          href="/Cesar_Vazquez_Tellez_CV.pdf" // Nombre exacto de tu archivo en la carpeta public
+          download="Cesar_Vazquez_Tellez_CV.pdf" // Nombre con el que se guardará en la PC del usuario
           className="glass-button px-6 py-3 flex items-center gap-2 rounded-full text-black font-medium transition-transform hover:scale-105"
         >
           <Download className="w-5 h-5 text-black" />

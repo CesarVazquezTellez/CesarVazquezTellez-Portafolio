@@ -8,32 +8,32 @@ import imageAetherys from '/Aetherys.png';
 
 const projects = [
     {
-        title: "Sistema Web para gestión de Servicio de Agua Potable FLOW",
-        description: "SaaS web para la gestión de servicio de agua potable en municipios del estado de Tlaxcala.",
+        title: "FLOW – Plataforma de Gestión de Agua Potable para Comundidades en Tlaxcala.",
+        description: "Permite administrar contratos, pagos, recaudación y reportes ciudadanos desde un portal centralizado.",
         image: imageFlow,
         tech: ["Node.js", "TypeScript", "Next.js", "React", "Tailwind CSS", "Supabase", "Prisma ORM", "Supabase Auth", "PostgreSQL"],
         github: "https://github.com",
         live: "https://example.com"
     },
     {
-        title: "Sistema de Gestión de Transporte Publico VOJO",
-        description: "Panel de control de horarios, rutas, unidades, conductores y paradas.",
+        title: "VOJO – Sistema de Gestión de Transporte Publico",
+        description: "Sistema administrativo para la gestión de rutas, operadores, unidades y horarios de transporte público.",
         image: imageVojo,
         tech: ["Java", "Apache Maven", "PostgreSQL", "Swing", "Bcrypt"],
         github: "https://github.com",
         live: "https://example.com"
     },
     {
-        title: "Fonito Store",
-        description: "Sistema backend para la administración de E-commerce de telefonia con autenticación segura con JWT para administrador.",
+        title: "Fonito Store – Backend de E-commerce",
+        description: "Sistema backend para la administración de una tienda de telefonía, incluyendo autenticación segura de administradores y gestión de productos.",
         image: imageFonito,
         tech: ["Node.js", "TypeScript", "Nest.js", "React", "Vite", "PostgreSQL", "Railway", "JWT", "Bcrypt"],
         github: "https://github.com/CesarVazquezTellez/fonito-store-page",
         live: "https://example.com"
     },
     {
-        title: "Landing Page Aetherys startup",
-        description: "Diseño de landing page profesional para startup de desarrollo de software.",
+        title: "Landing Page – Aetherys startup",
+        description: "Landing page para startup de desarrollo de software con animaciones modernas y enfoque en experiencia de usuario.",
         image: imageAetherys,
         tech: ["React", "Tailwind CSS", "Framer Motion", "Figma"],
         github: "https://github.com",

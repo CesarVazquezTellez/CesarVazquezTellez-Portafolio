@@ -86,8 +86,7 @@ const ContactSection = () => {
                         transition={{ duration: 0.6, delay: 0.15 }}
                         className="text-white/80 text-sm md:text-base max-w-md mx-auto leading-relaxed"
                     >
-                        ¿Tienes una idea en mente? Me encantaría escucharla y
-                        ayudarte a convertirla en realidad.
+                        Si te interesa colaborar o conocer más sobre mis proyectos, puedes contactarme directamente.
                     </motion.p>
                 </motion.div>
 

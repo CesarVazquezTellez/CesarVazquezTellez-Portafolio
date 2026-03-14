@@ -7,25 +7,25 @@ const skillsData = [
   {
     title: "Desarrollo Frontend",
     icon: Monitor,
-    description: "Creación de interfaces modernas y responsivas con enfoque en UX/UI, transformando diseños en código semántico y funcional.",
+    description: "Desarrollo de interfaces web responsivas utilizando React y Tailwind, enfocadas en usabilidad, rendimiento y experiencia de usuario.",
     color: "bg-white"
   },
   {
     title: "Estructura y Backend",
     icon: Server,
-    description: "Diseño de arquitecturas REST, gestión de bases de datos relacionales y ejecución de consultas avanzadas para sistemas escalables.",
+    description: "Diseño e implementación de APIs REST, modelado de bases de datos relacionales y desarrollo de servicios backend escalables.",
     color: "bg-cyan-600"
   },
   {
     title: "Análisis y Calidad",
     icon: Settings,
-    description: "Interpretación de requerimientos, resolución de problemas complejos y aplicación de buenas prácticas para un código limpio.",
+    description: "Análisis de requerimientos, resolución de problemas técnicos y aplicación de buenas prácticas para mantener código limpio, mantenible y escalable.",
     color: "bg-cyan-600"
   },
   {
     title: "Colaboración",
     icon: Users,
-    description: "Trabajo en equipo bajo metodologías ágiles, comunicación efectiva y gran capacidad de autoaprendizaje para nuevas tecnologías.",
+    description: "Trabajo en equipo bajo metodologías ágiles, comunicación efectiva con equipos técnicos y rápida adaptación a nuevas tecnologías.",
     color: "bg-white"
   }
 ];
