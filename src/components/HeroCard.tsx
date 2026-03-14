@@ -103,7 +103,7 @@ const HeroCard = () => {
 
         {/* CTA Button */}
         <a
-          href="/CesarVazquezTellezCV.pdf" // Nombre exacto de tu archivo en la carpeta public
+          href="/CV_Cesar_Vazquez_Tellez_.pdf" // Nombre exacto de tu archivo en la carpeta public
           download="CV_Cesar_Vazquez_Tellez.pdf" // Nombre con el que se guardará en la PC del usuario
           className="glass-button px-6 py-3 flex items-center gap-2 rounded-full text-black font-medium transition-transform hover:scale-105"
         >
