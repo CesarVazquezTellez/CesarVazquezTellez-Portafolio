@@ -12,15 +12,15 @@ const projects = [
         description: "Permite administrar contratos, pagos, recaudación y reportes ciudadanos desde un portal centralizado.",
         image: imageFlow,
         tech: ["Node.js", "TypeScript", "Next.js", "React", "Tailwind CSS", "Supabase", "Prisma ORM", "Supabase Auth", "PostgreSQL"],
-        github: "https://github.com",
-        live: "https://example.com"
+        github: "https://github.com/CesarVazquezTellez/CesarVazquezTellez-Sistema-Web-para-Gestion-de-Servicio-de-Agua-Potable-FLOW",
+        live: "https://flow-sistema-web.com/"
     },
     {
         title: "VOJO – Sistema de Gestión de Transporte Publico",
         description: "Sistema administrativo para la gestión de rutas, operadores, unidades y horarios de transporte público.",
         image: imageVojo,
         tech: ["Java", "Apache Maven", "PostgreSQL", "Swing", "Bcrypt"],
-        github: "https://github.com",
+        github: "https://github.com/CesarVazquezTellez/proyectovojo",
         live: "https://example.com"
     },
     {
@@ -29,7 +29,7 @@ const projects = [
         image: imageFonito,
         tech: ["Node.js", "TypeScript", "Nest.js", "React", "Vite", "PostgreSQL", "Railway", "JWT", "Bcrypt"],
         github: "https://github.com/CesarVazquezTellez/fonito-store-page",
-        live: "https://example.com"
+        live: "https://cesarvazqueztellez.github.io/fonito-store-page/"
     },
     {
         title: "Landing Page – Aetherys startup",
@@ -37,7 +37,7 @@ const projects = [
         image: imageAetherys,
         tech: ["React", "Tailwind CSS", "Framer Motion", "Figma"],
         github: "https://github.com",
-        live: "https://example.com"
+        live: "https://portafolio-fawn-three-79.vercel.app/"
     }
 ];
 

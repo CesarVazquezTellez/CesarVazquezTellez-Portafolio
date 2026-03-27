@@ -8,11 +8,13 @@ const techGroups = [
     dot: "bg-blue-400",
     items: [
       { name: "Java", icon: "/java.png" },
+      { name: "Spring Boot", icon: "/springboot.svg" },
       { name: "Python", icon: "/python.png" },
       { name: "JavaScript", icon: "/js.png" },
       { name: "TypeScript", icon: "/mecanografiado.png" },
       { name: "Node.js", icon: "/nodejs.png" },
       { name: "Nest.js", icon: "/nestjs.svg" },
+      { name: "Prisma ORM", icon: "/prisma.svg" },
     ]
   },
   {
@@ -23,6 +25,7 @@ const techGroups = [
       { name: "HTML", icon: "/html-5.png" },
       { name: "CSS", icon: "/css-3.png" },
       { name: "React.js", icon: "/react.svg" },
+      { name: "Next.js", icon: "/nextjs.svg" },
       { name: "Figma", icon: "/figma.png" },
       { name: "Adobe XD", icon: "/adobeXD.png" },
       { name: "Inkscape", icon: "/inkscape.webp" },
@@ -36,8 +39,8 @@ const techGroups = [
     items: [
       { name: "PostgreSQL", icon: "/postgre.png" },
       { name: "MySQL", icon: "/mysql.png" },
+      { name: "MongoDB", icon: "/mongodb.svg" },
       { name: "SupaBase", icon: "/supabase.png" },
-      { name: "Maven", icon: "/maven.jpg" },
     ]
   },
   {
@@ -50,9 +53,13 @@ const techGroups = [
       { name: "IntelliJ", icon: "/intelij.png" },
       { name: "Git", icon: "/git.png" },
       { name: "GitHub", icon: "/github1.png" },
+      { name: "OpenAI / Claude", icon: "/openai.svg" },
       { name: "Vite", icon: "/vite.svg" },
       { name: "Npm", icon: "/npm.png" },
+      { name: "Jest (Testing)", icon: "/jest.svg" },
       { name: "Postman", icon: "/postman1.png" },
+      { name: "Maven", icon: "/maven.jpg" },
+      { name: "Scrum", icon: "/scrum.svg" },
     ]
   }
 ];
